@@ -1,6 +1,6 @@
-~ Explanation:
+~ makeCacheMatrix Explanation:
 
-    The function starts requesting the matrix
+    This function starts requesting the matrix
     The code will get and set the inverse of the matrix
 
 
@@ -16,9 +16,9 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set=set, get=get, setinverse=setinverse, getinverse=getinverse)
 }
 
-~ Explanation:
+~ cacheSolve Explanation:
 
-    The cacheSolve verify if the matrix inverse is cached
+    This function will verify if the matrix inverse is cached
     If the matrix is not null it will pop up a message "getting caching data" and return the inverse of the matrix
 
 
