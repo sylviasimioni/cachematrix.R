@@ -1,3 +1,7 @@
+~ Explanation:
+
+    The function starts requesting the matrix
+    The code will get and set the inverse of the matrix
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -12,6 +16,11 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set=set, get=get, setinverse=setinverse, getinverse=getinverse)
 }
 
+~ Explanation:
+
+    The cacheSolve verify if the matrix inverse is cached
+    If the matrix is not null it will pop up a message "getting caching data" and return the inverse of the matrix
+
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
@@ -24,6 +33,10 @@ cacheSolve <- function(x, ...) {
   x$setinverse(inv)
   inv
 }
+
+~ Explanation:
+
+    Matrix used for the problem
 
 x = rbind(c(1,0,0), c(0,1,0), c(0,0,1))
 m = makeCacheMatrix(x)
